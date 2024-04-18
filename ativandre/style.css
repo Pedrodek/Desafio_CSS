@@ -43,21 +43,15 @@ hr {
     text-align: center;
 }
 
-.menu h2, p {
-    transition: 2s;
-    transform: scale(1);
-}
-
 .menu.hidden {
-    transition: 2s;
-    transform: scale(0);
+    visibility: hidden;
+    transition: .4s all ease;
 }
 
 .fieldset-menu.hidden{
-    transition: 2s;
-    transform: scale(0);
+    transition: transform .4s ease, height .2s ease;
+    transform: translateY(-200%);
 }
-
 
 .menu-pergunta {
     padding: 1rem;
@@ -88,4 +82,17 @@ hr {
     align-items: center;
     text-align: center;
 }
+
+.fieldset-menu-sim {
+    transition-delay: .6s;
+    transition: 1s ease all;
+    transform: translateX(-1000%);
+}
+
+.fieldset-menu-sim.show {
+    display: grid;
+    transition: 1s ease all;
+    transform: translateX(0%);
+}
+
 
