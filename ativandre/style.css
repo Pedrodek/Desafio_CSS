@@ -4,5 +4,16 @@
 }
 
 body {
-    
+    display: grid;
+    justify-items: center;
+    background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
+}
+
+fieldset {
+    padding: 10rem;
+    border-radius: 1rem;
+}
+
+.menu {
+    display: grid;
 }
