@@ -3,17 +3,89 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     display: grid;
     justify-items: center;
+    align-items: center;
     background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
+    font-size: 125%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 fieldset {
-    padding: 10rem;
+    padding: 2rem;
     border-radius: 1rem;
+    backdrop-filter: blur(200px);
+}
+
+.div-menu {
+    width: 75%;
+    max-height: 85%;
+}
+
+hr {
+    background-color: rgba(255, 170, 0, 0.486);
+    width: 85%;
+    height: 50%;
+    border-radius: 1rem;
+    border-width: 0;
 }
 
 .menu {
     display: grid;
+    grid-template-rows: 1fr 2fr .5fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
+
+.menu h2, p {
+    transition: 2s;
+    transform: scale(1);
+}
+
+.menu.hidden {
+    transition: 2s;
+    transform: scale(0);
+}
+
+.fieldset-menu.hidden{
+    transition: 2s;
+    transform: scale(0);
+}
+
+
+.menu-pergunta {
+    padding: 1rem;
+}
+
+.menu-resposta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-resposta input {
+    width: 60%;
+    height: 35%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.menu-sim {
+    display: grid;
+    grid-template-rows: 1fr 2fr .5fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
