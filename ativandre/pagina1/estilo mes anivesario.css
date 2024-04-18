@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: papayawhip;
+}
+
+.calendar {
+    width: 50%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    height: 75px; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.aniversario{
+    color: red;
+}
+
+.extra{
+    color: darkgrey;
+}
+
+.cor-serta{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
