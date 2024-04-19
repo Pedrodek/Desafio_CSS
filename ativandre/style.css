@@ -10,21 +10,27 @@ html, body {
 body {
     display: grid;
     justify-items: center;
-    align-items: center;
     background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
     font-size: 125%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.div-menu {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    width: 75%;
+    max-height: 100%;
+}
+
 fieldset {
+    display: block;
+    grid-row: 1/1;
+    grid-column: 1/1;
     padding: 2rem;
     border-radius: 1rem;
     backdrop-filter: blur(200px);
-}
-
-.div-menu {
-    width: 75%;
-    max-height: 85%;
 }
 
 hr {
@@ -48,7 +54,13 @@ hr {
     transition: .4s all ease;
 }
 
+.fieldset-menu {
+    position: relative;
+}
+
 .fieldset-menu.hidden{
+    position: absolute;
+    width: 70.6%;
     transition: transform .4s ease, height .2s ease;
     transform: translateY(-200%);
 }
@@ -75,24 +87,51 @@ hr {
     cursor: pointer;
 }
 
-.menu-sim {
-    display: grid;
-    grid-template-rows: 1fr 2fr .5fr 1fr 2fr;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+.fieldset-menu-sim.hidden {
+    position: absolute;
+    transition-delay: .6s;
+    transition: 1s ease all;
+    transform: translateX(-200%);
 }
 
 .fieldset-menu-sim {
-    transition-delay: .6s;
-    transition: 1s ease all;
-    transform: translateX(-1000%);
-}
-
-.fieldset-menu-sim.show {
-    display: grid;
+    position: relative;
     transition: 1s ease all;
     transform: translateX(0%);
+    height: 75%;
 }
+
+.menu-sim {
+    display: grid;
+    grid-template-rows: 1fr .1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.menu-sim-hr {
+    background-color: chocolate;
+    width: 95%;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.destinos div {
+    padding: 15%;
+}
+
+.destinos div a {
+    text-decoration: none;
+}
+
 
 
