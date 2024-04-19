@@ -13,6 +13,7 @@ body {
     background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
     font-size: 125%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 }
 
 .div-menu {
@@ -103,6 +104,7 @@ hr {
 
 .menu-sim {
     display: grid;
+    grid-column: 1/1;
     grid-template-rows: 1fr .1fr 2fr;
     justify-items: center;
     align-items: center;
@@ -132,6 +134,7 @@ hr {
 .destinos div a {
     text-decoration: none;
 }
+
 
 
 
