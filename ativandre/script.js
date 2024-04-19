@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sim.addEventListener('click', ()=> {
         menu.classList.add('hidden');
         fieldmenu.classList.add('hidden')
-        fieldmenuSim.classList.add('show')
+        fieldmenuSim.classList.remove('hidden')
 
     })
 
@@ -19,4 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
