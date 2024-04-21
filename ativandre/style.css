@@ -13,7 +13,13 @@ body {
     background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
     font-size: 125%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+    
+}
+
+@media(max-width: 1000px) {
+    body {
+        font-size: 115%;
+    }
 }
 
 .div-menu {
@@ -22,7 +28,13 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     width: 75%;
-    max-height: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1000px) {
+    .div-menu {
+        width: 88%;
+    }
 }
 
 fieldset {
@@ -31,7 +43,13 @@ fieldset {
     grid-column: 1/1;
     padding: 2rem;
     border-radius: 1rem;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(160px);
+}
+
+@media(max-width: 1000px) {
+    fieldset {
+        padding: 1.2rem;
+    }
 }
 
 hr {
@@ -42,12 +60,26 @@ hr {
     border-width: 0;
 }
 
+@media(max-width: 1000px) {
+    hr {
+        background-color: rgba(255, 170, 0, 0.6);
+        width: 95%;
+        height: 35%;
+    }
+}
+
 .menu {
     display: grid;
     grid-template-rows: 1fr 2fr .5fr 1fr 2fr;
     justify-items: center;
     align-items: center;
     text-align: center;
+}
+
+@media(max-width: 1000px) {
+    .menu {
+        grid-template-rows: 1fr 1.6fr .5fr 1fr 1fr;
+    }
 }
 
 .menu.hidden {
@@ -61,7 +93,7 @@ hr {
 
 .fieldset-menu.hidden{
     position: absolute;
-    width: 70.6%;
+    width: 70.4%;
     transition: transform .4s ease, height .2s ease;
     transform: translateY(-200%);
 }
@@ -79,6 +111,12 @@ hr {
     align-items: center;
 }
 
+@media(max-width: 1000px) {
+    .menu-resposta {
+        width: 100%;
+    }
+}
+
 .menu-resposta input {
     width: 60%;
     height: 35%;
@@ -90,7 +128,6 @@ hr {
 
 .fieldset-menu-sim.hidden {
     position: absolute;
-    transition-delay: .6s;
     transition: 1s ease all;
     transform: translateX(-200%);
 }
@@ -98,6 +135,7 @@ hr {
 .fieldset-menu-sim {
     position: relative;
     transition: 1s ease all;
+    transition-delay: .28s;
     transform: translateX(0%);
     height: 75%;
 }
@@ -112,23 +150,40 @@ hr {
     height: 100%;
 }
 
+@media(max-width: 1000px) {
+    .menu-sim {
+        font-size: 85%;
+    }
+}
+
 .menu-sim-hr {
     background-color: chocolate;
     width: 95%;
+    height: 50%;
 }
 
 .destinos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
     align-items: center;
     justify-items: center;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .destinos div {
     padding: 15%;
+}
+
+@media(max-width: 1000px) {
+    .destinos {
+        height: 70%;
+        font-size: 100%;
+    }
+    .destinos div {
+        padding: 4%;
+    }
 }
 
 .destinos div a {
