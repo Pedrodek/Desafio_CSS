@@ -13,6 +13,8 @@ body {
     background: linear-gradient(180deg, white, rgb(154, 212, 183)) no-repeat;
     font-size: 125%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-image 11s ease;
+    overflow-x: hidden;
     
 }
 
@@ -20,6 +22,12 @@ body {
     body {
         font-size: 115%;
     }
+}
+
+body.active {
+    transition: background-image 11s ease;
+    background-size: cover;
+    background-image: url(background.jpg);
 }
 
 .div-menu {
@@ -138,6 +146,7 @@ hr {
     transition-delay: .28s;
     transform: translateX(0%);
     height: 75%;
+    backdrop-filter: blur(20px);
 }
 
 .menu-sim {
