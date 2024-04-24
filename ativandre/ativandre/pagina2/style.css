@@ -1,0 +1,97 @@
+body{
+    background-color: #9453aad8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    height: 70%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #f2f2f2;
+    
+}
+
+td {
+    height: 100%; 
+}
+
+.corcorreta{
+    background-color: rgb(192, 185, 185);
+}
+
+tr{
+    width: 100%;
+}
+
+.ING{
+    background-color: #63e3d7c3;
+}
+
+.PORT{
+    background-color: #515cdabe;
+}
+
+.ED{
+    background-color: #4a4ec2;
+}
+
+.ARTES{
+    background-color: #6b3bc4d2;
+}
+
+.intervalo{
+    background-color: #000000;
+    color: #ddd;
+}
+
+.FIS{
+    background-color: #73ed87dc;
+}
+
+.QUIM{
+    background-color: #54e64fd9;
+}
+
+.BIO{
+    background-color: #27a82ad0;
+}
+
+.FILO{
+    background-color: rgba(246, 82, 22, 0.893);
+}
+
+.GEO{
+    background-color: rgba(226, 154, 128, 0.801);
+}
+
+.HIST{
+    background-color: #b77529e4;
+}
+
+.SOCIO{
+    background-color: rgba(203, 81, 36, 0.67);
+}
+
+.FTP{
+    background-color: red;
+}
+
+.MAT{
+    background-color: rgba(238, 74, 238, 0.927);
+}
+
+.PAPV{
+    background-color: rgba(215, 46, 125, 0.871);
+}
