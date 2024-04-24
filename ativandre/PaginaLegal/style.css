@@ -4,15 +4,21 @@
 }
 
 html, body {
-    height: 100vh;
+    height: auto;
 }
 
 body{
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 80vh 1fr 40vh;
     justify-items: center;
     text-align: center;
     font-size: 120%;
+}
+
+@media(max-width: 1000px) {
+    body {
+        font-size: 108%;
+    }
 }
 
 header {
@@ -24,7 +30,7 @@ header {
     justify-items: center;
     position: fixed;
     font-size: 108%;
-    background-color: rgba(245, 222, 179, 0.75);
+    background-color: rgb(253, 226, 177, .7);
     z-index: 1;
 }
 
@@ -91,8 +97,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation: change 10s infinite ease-in-out;
-    height: 70vh;
+    animation: change 12s infinite ease-in-out;
     justify-items: center;
     align-items: center;
     color: white;
@@ -102,11 +107,14 @@ section{
     0%{
         background-image: url(./ImagensLegais/img11.jpg);
     }
-    33%{
+    25%{
         background-image: url(./ImagensLegais/img12.jpg);
     }
-    67%{
-        background-image: url(./ImagensLegais/img13.jpg);
+    50%{
+        background-image: url(./ImagensLegais/img14.jpg);
+    }
+    75%{
+        background-image: url(./ImagensLegais/img15.jpg);
     }
     100%{
         background-image: url(./ImagensLegais/img11.jpg);
@@ -115,9 +123,8 @@ section{
 
 .s2 {
     display: grid;
-    height: 100%;
     justify-items: center;
-    background-color: rgb(255, 248, 210);
+    background-color: rgb(255, 250, 241);
 }
 
 .s2-content {
@@ -125,12 +132,31 @@ section{
     width: 80%;
     height: 100%;
     justify-items: center;
-    background-color: rgb(255, 242, 199);
+    background-color: rgba(245, 222, 179);
+    color: #003399;
     font-size: 90%;
 }
 
+@media(max-width: 1000px) {
+    .s2-content {
+        width: 100%;
+        font-size: 85%;
+    }
+}
+
 .s2-content-text {
-    width: 50%;
+    display: grid;
+    grid-template-rows: .4fr 1fr;
+    width: 70%;
     align-items: center;
     padding-top: 5%;
+} 
+
+footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
 }
