@@ -8,13 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const nao = document.querySelector('.nao')
 
     sim.addEventListener('click', ()=> {
-        body.classList.add('active');
         menu.classList.add('hidden');
         fieldmenu.classList.add('hidden');
         fieldmenuSim.classList.remove('hidden');
 
 
     })
-
 
 });
