@@ -28,6 +28,15 @@ body.backwhite {
     animation: spiin .1ms infinite linear;
 }
 
+@media(max-width: 800px) {
+    .quadrado-spin:hover {
+        animation: none;
+    }
+    .quadrado-spin:active {
+        animation: spiin .1ms infinite linear;
+    }
+}
+
 @keyframes spiin {
     from {
         rotate: 0deg;
