@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+.quadrado-spin {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+}
+
+.quadrado-spin:hover {
+    animation: spiin .1ms infinite linear;
+}
+
+@keyframes spiin {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+.orbe {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+}
+
+.orbe:active {
+    animation: charging 10s infinite ease;
+}
+
+@keyframes charging {
+    
+}
