@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    height: 70%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+td{
+    width: 0%;
+}
+
+.cor1{
+    background-color: rgba(143, 143, 143, 0.938);
+}

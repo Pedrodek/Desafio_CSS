@@ -3,6 +3,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 table {
