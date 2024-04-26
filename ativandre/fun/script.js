@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quad.addEventListener('mouseout', () => {
         cat.pause();
         clearTimeout(timeoutId2);
+        cat.currentTime = 0;
         esquerdo.forEach(function(filho) {
             filho.classList.remove('vibing');
         });
@@ -74,9 +75,22 @@ document.addEventListener('DOMContentLoaded', () => {
     quad.addEventListener('touchend', () => {
         cat.pause();
         clearTimeout(timeoutId2)
+        cat.currentTime = 0;
+        esquerdo.forEach(function(filho) {
+            filho.classList.remove('vibing');
+        });
+        direito.forEach(function(filho) {
+            filho.classList.remove('vibing');
+        });
     });
 
     
+});
+
+//amei isso =3
+
+
+ 
 });
 
 //amei isso =3
