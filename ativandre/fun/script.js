@@ -89,10 +89,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //amei isso =3
 
-
- 
-});
-
-//amei isso =3
-
-
